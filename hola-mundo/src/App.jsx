@@ -1,5 +1,6 @@
 import './App.css'
 import { TwitterFollowCard } from "./TwitterFollowCard.jsx"
+import { Counter } from './components/Counter/Counter.jsx'
 import { Navbar } from './components/Navbar/Navbar.jsx'
 import { ProductCard } from './components/ProductCard/ProductCard.jsx'
 
@@ -27,7 +28,7 @@ const users = [
 export function App () {
     return (
     <>
-    <Navbar></Navbar>
+    <Navbar />
     <div className="section-container">
         <ProductCard></ProductCard>
         <ProductCard></ProductCard>
@@ -49,6 +50,7 @@ export function App () {
         }
         </section>
     </div>
+    <Counter />
     </>
     )
 }
