@@ -1,5 +1,7 @@
 import './App.css'
-import { TwitterFollowCard } from "./TwitterFollowCard"
+import { TwitterFollowCard } from "./TwitterFollowCard.jsx"
+import { Navbar } from './components/Navbar/Navbar.jsx'
+import { ProductCard } from './components/ProductCard/ProductCard.jsx'
 
 const users = [
     {
@@ -24,21 +26,29 @@ const users = [
 
 export function App () {
     return (
-    <section className='App'>
-    {
-        users.map(user => {
-            const { userName, name, isFollowing } = user
-            return (
-                <TwitterFollowCard
-                    key={userName}
-                    userName={userName}
-                    name={name}
-                    initialIsFollowing={isFollowing}
-                >
-                </TwitterFollowCard>
-            )
-        })
-    }
-    </section>
+    <>
+    <Navbar></Navbar>
+    <div className="section-container">
+        <ProductCard></ProductCard>
+        <ProductCard></ProductCard>
+        <section className='App'>
+
+        {
+            users.map(user => {
+                const { userName, name, isFollowing } = user
+                return (
+                    <TwitterFollowCard
+                        key={userName}
+                        userName={userName}
+                        name={name}
+                        initialIsFollowing={isFollowing}
+                    >
+                    </TwitterFollowCard>
+                )
+            })
+        }
+        </section>
+    </div>
+    </>
     )
 }

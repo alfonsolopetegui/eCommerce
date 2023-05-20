@@ -4,6 +4,7 @@
     color: #fff;
     font-size: .8rem;
     justify-content: space-between;
+    max-width: 350px;
   }
   
   .tw-followCard-header {
@@ -73,3 +74,11 @@
     display: none;
   }
   
+
+
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }

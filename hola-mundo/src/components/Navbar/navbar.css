@@ -1,0 +1,23 @@
+.nv-container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+.nav-bar {
+    
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    background-color: none;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+.user-login {
+    color: white;
+}
