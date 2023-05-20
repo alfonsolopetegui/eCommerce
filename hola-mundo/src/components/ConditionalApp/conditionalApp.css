@@ -1,0 +1,14 @@
+.ca-titulo {
+    color: white;
+}
+
+.conditional-container {
+    background-color: aquamarine;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}

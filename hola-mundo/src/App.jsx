@@ -3,6 +3,7 @@ import { TwitterFollowCard } from "./TwitterFollowCard.jsx"
 import { Counter } from './components/Counter/Counter.jsx'
 import { Navbar } from './components/Navbar/Navbar.jsx'
 import { ProductCard } from './components/ProductCard/ProductCard.jsx'
+import { ConditionalApp } from './components/ConditionalApp/ConditionalApp.jsx'
 
 const users = [
     {
@@ -51,6 +52,7 @@ export function App () {
         </section>
     </div>
     <Counter />
+    <ConditionalApp />
     </>
     )
 }
