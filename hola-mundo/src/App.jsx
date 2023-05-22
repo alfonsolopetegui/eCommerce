@@ -4,6 +4,7 @@ import { Counter } from './components/Counter/Counter.jsx'
 import { Navbar } from './components/Navbar/Navbar.jsx'
 import { ProductCard } from './components/ProductCard/ProductCard.jsx'
 import { ConditionalApp } from './components/ConditionalApp/ConditionalApp.jsx'
+import ErrorApp  from './components/ErrorApp/ErrorApp.jsx'
 
 const users = [
     {
@@ -53,6 +54,7 @@ export function App () {
     </div>
     <Counter />
     <ConditionalApp />
+    <ErrorApp />
     </>
     )
 }

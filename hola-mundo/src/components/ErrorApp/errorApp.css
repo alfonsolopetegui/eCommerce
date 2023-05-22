@@ -1,0 +1,19 @@
+.error-container {
+    max-width: 400px;
+    background-color: blueviolet;
+    min-height: 75px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.error-message {
+    color: white;
+    text-align: center;
+}

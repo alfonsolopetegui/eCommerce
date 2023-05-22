@@ -12,6 +12,8 @@ export const Counter = () => {
                 Incrementar
             </button>
             <h1>Clicks: {counter}</h1>
+            {(counter > 4 && counter < 10) && <h3>Has superado la marca</h3>}
+            {(counter >= 10) && <h1>"Para de hacer click loco!!!</h1>}
         </section>
     )
 }
